@@ -99,15 +99,16 @@
     @apply border border-t-0 md:border-t md:border-l-0 border-black border-solid;
     @apply p-6 md:p-8 lg:p-10;
     @apply text-center md:text-left;
+    @apply flex flex-col justify-center items-center;
     /* @apply lg:mr-20 lg:ml-64 lg:h-6; */
     /* @apply lg:absolute lg:self-end lg:justify-end; */
   }
   .sw-header {
-    @apply text-[28px] leading-8 sm:text-[32px] md:text-4xl lg:text-4xl;
-    @apply p-2;
+    @apply text-[28px] leading-8 sm:text-[32px] md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-7xl;
+    @apply p-2 xl:p-3;
   }
   .sw-body{
-    @apply p-2;
+    @apply p-2 xl:p-3 xl:text-lg 2xl:text-2xl;
   }
   .sb-header {
     @apply flex text-center md:justify-between flex-col md:flex-row;

@@ -889,6 +889,10 @@ body {
 }
 
 .side-words {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   /* @apply lg:mr-20 lg:ml-64 lg:h-6; */
   /* @apply lg:absolute lg:self-end lg:justify-end; */
 }
@@ -918,12 +922,47 @@ body {
   }
 }
 
+@media (min-width: 1280px) {
+  .sw-header {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1536px) {
+  .sw-header {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
 .sw-header {
   padding: 0.5rem;
 }
 
+@media (min-width: 1280px) {
+  .sw-header {
+    padding: 0.75rem;
+  }
+}
+
 .sw-body {
   padding: 0.5rem;
+}
+
+@media (min-width: 1280px) {
+  .sw-body {
+    padding: 0.75rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .sw-body {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .sb-header {
