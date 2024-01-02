@@ -807,13 +807,75 @@ body {
   }
 }
 
+.second-box-one {
+  position: relative;
+  /* genMar */
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .second-box-one {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .second-box-one {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .second-box-one {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+}
+
+.second-box-one {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .second-box-one {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .second-box-one {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .second-box-one {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+}
+
 .second-image {
   /* @apply bg-[url('./images/mobile/image-interactive.jpg')];
     @apply bg-no-repeat bg-center bg-fixed bg-cover; */
+  flex-shrink: 0;
   /* @apply lg:self-start self-auto; */
+}
+
+@media (min-width: 1024px) {
+  .second-image {
+    margin-bottom: 5rem;
+  }
+}
+
+.second-image {
   flex-basis: 100%;
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px) {
@@ -822,19 +884,15 @@ body {
   }
 }
 
-.second-image {
-  border-width: 1px;
-  border-bottom-width: 0px;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+@media (min-width: 1024px) {
+  .second-image {
+    flex-basis: 65%;
+  }
 }
 
-@media (min-width: 768px) {
-  .second-image {
-    border-bottom-width: 1px;
-    border-right-width: 0px;
-  }
+.second-image {
+  /* I love the border */
+  /* @apply border border-b-0 md:border-b md:border-r-0 border-black border-solid; */
 }
 
 .second-image img {
@@ -847,22 +905,26 @@ body {
 }
 
 .side-words {
-  /* @apply z-10; */
-  border-width: 1px;
-  border-top-width: 0px;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  z-index: 10;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  /* lg:mb-20 */
+  position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .side-words {
-    border-top-width: 1px;
-    border-left-width: 0px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 50%;
+    top: 33.333333%;
   }
 }
 
 .side-words {
+  /* I love the border */
+  /* @apply border border-t-0 md:border-t md:border-l-0 border-black border-solid; */
   padding: 1.5rem;
 }
 
@@ -893,6 +955,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* @apply lg:self-end lg:justify-end !important; */
+  /* @apply lg:ml-10; */
   /* @apply lg:mr-20 lg:ml-64 lg:h-6; */
   /* @apply lg:absolute lg:self-end lg:justify-end; */
 }
@@ -1053,7 +1117,7 @@ body {
 
 .second-box-two {
   --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
 .sb-content {
@@ -1510,58 +1574,6 @@ height
 
 /* General padding X*/
 
-.genPad {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .genPad {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .genPad {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .genPad {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-  }
-}
-
-.genPad {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .genPad {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .genPad {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .genPad {
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
-}
-
 .genMar {
   /* @apply my-6 md:my-14 lg:my-20 xl:my-28; */
   margin-left: 1.5rem;
@@ -1707,10 +1719,6 @@ height
 
 .min-h-\[100vh\] {
   min-height: 100vh;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
 }
 
 .cursor-pointer {
