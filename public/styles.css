@@ -470,12 +470,12 @@ body {
   background-repeat: no-repeat;
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
-  padding: 1.25rem;
+  padding: 1.75rem;
 }
 
 @media (min-width: 768px) {
   .first-box {
-    padding: 1.5rem;
+    padding: 2rem;
   }
 }
 
@@ -518,7 +518,7 @@ body {
 }
 
 .first-box {
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 @media (min-width: 1024px) {
@@ -642,9 +642,16 @@ body {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   display: inline-block;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   text-transform: uppercase;
+}
+
+@media (min-width: 640px) {
+  .firstbox-word {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -678,12 +685,12 @@ body {
 }
 
 .firstbox-word {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 @media (min-width: 768px) {
   .firstbox-word {
-    padding: 2rem;
+    padding: 2.5rem;
   }
 }
 
@@ -727,12 +734,12 @@ body {
 }
 
 .firstbox-word {
-  margin-top: 9rem;
+  margin-top: 10rem;
 }
 
 @media (min-width: 768px) {
   .firstbox-word {
-    margin-top: 8rem;
+    margin-top: 9rem;
   }
 }
 
