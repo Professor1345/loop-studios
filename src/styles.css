@@ -26,21 +26,21 @@
     @apply text-3xl font-bold;
   }
   .navbar {
-    @apply hidden lg:flex;
+    @apply hidden md:flex;
   }
   .navbar a {
-    @apply lg:mx-4;
+    @apply md:mx-4 my-auto;
   }
   .nav-button,
   .fas,
   .fa-bars {
-    @apply sm:flex lg:hidden !important;
+    @apply sm:flex md:hidden !important;
     @apply text-3xl my-auto;
   }
 
   /* Navbar for Mobile */
   .navMobile {
-    @apply hidden lg:hidden;
+    @apply hidden md:hidden;
     @apply w-full h-screen z-20 fixed !important;
     @apply bg-black text-white;
     @apply top-0 left-0;
