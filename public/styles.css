@@ -1531,6 +1531,10 @@ height
   display: block;
 }
 
+.flex {
+  display: flex;
+}
+
 .grid {
   display: grid;
 }
@@ -1545,6 +1549,10 @@ height
 
 .resize {
   resize: both;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .bg-black {
