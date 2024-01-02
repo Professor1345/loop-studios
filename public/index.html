@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="font awesome/css/all.css" />
+    <script src="./code.js"></script>
+    <title>Loop Studios</title>
+  </head>
+  <body>
+    <div>
+      <!-- <h1 class="text-xl text-blue-800">Loop Studios</h1> -->
+      <div class="first-box">
+        <!-- Navbar for Desktop -->
+        <div class="nav">
+          <div class="nav-name">loopstudios</div>
+          <div class="nav-button fas fa-bars" onclick="openButton()"></div>
+          <div class="navbar">
+            <a href="">About</a>
+            <a href="">Careers</a>
+            <a href="">Events</a>
+            <a href="">Products</a>
+            <a href="">Support</a>
+          </div>
+        </div>
+
+        <!-- Navbar for Mobile -->
+        <div class="navMobile">
+          <div class="overlay">
+          <div class="nav-nameM">loopstudios</div>
+          <div class="nav-buttonM cursor-pointer" onclick="closeButton()">&times;</div>
+          </div>
+          
+          <div class="navbarM">
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Events</a>
+            <a href="#">Products</a>
+            <a href="#">Support</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="firstbox-word">Immersive experiences that deliver</div>
+        </div>
+      </div>
+      <div class="second-box">
+        <div class="second-box-one">
+          <div class="second-image flex-1">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="./images/desktop/image-interactive.jpg"
+              />
+              <source src="./images/mobile/image-interactive.jpg" />
+              <img
+                src="./images/mobile/image-interactive.jpg"
+                alt="Image Interactive"
+                style="width: auto"
+              />
+            </picture>
+          </div>
+          <div class="side-words flex-1">
+            <div class="sw-header uppercase">The leader in interactive VR</div>
+            <div class="sw-body">
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </div>
+          </div>
+        </div>
+        <div class="second-box-two uppercase py-6 md:py-14 lg:py-20 xl:py-28">
+          <div class="sb-header genMar">
+            <div class="text-3xl md:text-5xl lg:text-5xl">Our creations</div>
+            <div class="see-all"><a href="#">See all</a></div>
+          </div>
+          <div class="sb-content genMarc">
+            <div
+              class="bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/mobile/image-deep-earth.jpg')] lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/desktop/image-deep-earth.jpg')]"
+            >
+              <span> Deep<br />earth </span>
+            </div>
+            <div
+              class="bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/mobile/image-night-arcade.jpg')] lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/desktop/image-night-arcade.jpg')]"
+            >
+              <span> Night<br />arcade </span>
+            </div>
+
+            <div
+              class="bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/mobile/image-soccer-team.jpg')] lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/desktop/image-soccer-team.jpg')]"
+            >
+              <span> Soccer<br />team VR </span>
+            </div>
+            <div
+              class="bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/mobile/image-grid.jpg')] lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/desktop/image-grid.jpg')]"
+            >
+              <span> The<br />grid </span>
+            </div>
+            <div
+              class="bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/mobile/image-from-above.jpg')] lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/desktop/image-from-above.jpg')]"
+            >
+              <span> From up<br />above VR </span>
+            </div>
+            <div
+              class="bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/mobile/image-pocket-borealis.jpg')] lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/desktop/image-pocket-borealis.jpg')]"
+            >
+              <span> Pocket<br />borealis </span>
+            </div>
+            <div
+              class="bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/mobile/image-curiosity.jpg')] lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/desktop/image-curiosity.jpg')]"
+            >
+              <span> The<br />curiosity </span>
+            </div>
+            <div
+              class="bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/mobile/image-fisheye.jpg')] lg:bg-[linear-gradient(to_right,rgba(0,0,0,0.32),rgba(0,0,0,0)),url('./images/desktop/image-fisheye.jpg')]"
+            >
+              <span> Make it<br />fisheye </span>
+            </div>
+          </div>
+          <!-- Mobile See All -->
+          <div class="see-allM"><a href="#">See all</a></div>
+        </div>
+      </div>
+      <div class="third-box genPadTB">
+        <div class="TB-first ">
+          <div class="nav-nameTB">loopstudios</div>
+          <div class="navbarTB">
+            <a href="">About</a>
+            <a href="">Careers</a>
+            <a href="">Events</a>
+            <a href="">Products</a>
+            <a href="">Support</a>
+          </div>
+        </div>
+        <div class="TB-second">
+          <div class="TB-icons">
+            <a href="https://www.facebook.com/alfulaaniy/" class="fab fa-facebook"></a>
+            <a href="https://twitter.com/JavaNotScript" class="fab fa-twitter"></a>
+            <a href="https://github.com/Professor1345" class="fab fa-github"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+            <a href="#" class="fab fa-instagram"></a>
+          </div>
+          <div class="copyright">© 2021 Loopstudios. All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

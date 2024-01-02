@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+  body {
+    @apply overflow-auto;
+  }
+  /* First Box Starts Here */
+  .first-box {
+    @apply bg-[url('./images/mobile/image-hero.jpg')] lg:bg-[url('./images/desktop/image-hero.jpg')];
+    @apply bg-no-repeat bg-center bg-cover;
+    @apply text-gray-100;
+    @apply p-5 md:p-6 lg:p-9 xl:p-11;
+    @apply px-6 md:px-14 lg:px-20 xl:px-28;
+  }
+  .nav {
+    @apply flex justify-between;
+  }
+  .nav-name {
+    @apply text-3xl font-bold;
+  }
+  .navbar {
+    @apply hidden lg:flex;
+  }
+  .navbar a {
+    @apply lg:mx-4;
+  }
+  .nav-button,
+  .fas,
+  .fa-bars {
+    @apply sm:flex lg:hidden !important;
+    @apply text-3xl my-auto;
+  }
+
+  /* Navbar for Mobile */
+.navMobile{
+  @apply hidden lg:hidden;
+  @apply w-full h-screen z-20 fixed !important; 
+  @apply bg-black text-white;
+  @apply top-0 left-0;
+  @apply p-5;
+  
+}
+.overlay{
+  @apply flex justify-between;
+  @apply text-3xl;
+  @apply py-1;
+}
+.nav-buttonM{
+  @apply text-5xl leading-[36px];
+}
+
+.navbarM{
+  @apply flex flex-col justify-center text-2xl;
+  @apply uppercase;
+  @apply min-h-[100vh];
+  @apply pb-32;
+}
+.navbarM a{
+  @apply my-2;
+}
+
+
+
+  .firstbox-word {
+    @apply border-white border-2 border-solid;
+    @apply text-4xl md:text-6xl lg:text-7xl inline-block uppercase;
+    @apply w-[100%] md:w-[70%] lg:w-2/3;
+    @apply p-6 md:p-8 lg:m-0;
+    @apply my-24 md:my-20 lg:my-20 xl:my-24 2xl:my-32;
+  }
+  /* First Box Ends Here */
+
+  .second-box-one {
+    @apply flex flex-col md:flex-row lg:relative;
+    @apply p-6 md:p-14 lg:p-20 xl:p-28 py-24 md:p-16;
+  }
+  .second-image {
+    /* @apply bg-[url('./images/mobile/image-interactive.jpg')];
+    @apply bg-no-repeat bg-center bg-fixed bg-cover; */
+    @apply lg:self-start self-auto;
+  }
+  .side-words {
+    @apply bg-slate-400 z-10;
+    @apply lg:mr-20 lg:ml-64 lg:h-6;
+    @apply lg:absolute lg:self-end lg:justify-end;
+  }
+  .sw-header {
+    @apply text-3xl md:text-5xl lg:text-5xl;
+    @apply text-left md:text-center;
+  }
+
+  .sb-header {
+    @apply flex text-center md:justify-between flex-col md:flex-row;
+    @apply mb-2 md:mb-6 lg:mb-12 xl:mb-16;
+  }
+
+  .see-all {
+    @apply self-center hidden md:flex;
+  }
+  .see-all a {
+    @apply border-[1px] text-lg border-solid;
+    @apply p-1 px-6;
+    @apply border-black;
+  }
+
+  .see-allM{
+    @apply block md:hidden !important;
+    @apply flex justify-center my-6 !important;
+  }
+  .see-allM a {
+    @apply border-[1px] text-xl border-solid;
+    @apply p-3 px-16;
+    @apply border-black;
+  }
+  .second-box-two {
+    @apply bg-slate-100;
+  }
+
+  .sb-content {
+    @apply flex flex-wrap text-gray-50;
+  }
+  .sb-content div {
+    /* @apply bg-[url('./images/mobile/image-deep-earth.jpg')] lg:bg-[url('./images/desktop/image-deep-earth.jpg')]; */
+    @apply bg-no-repeat bg-center bg-cover;
+    @apply flex items-end;
+    @apply h-[16rem] sm:h-[18rem] md:h-[22rem] lg:h-[25rem] xl:h-[30rem];
+    @apply w-full md:w-[46.4%] lg:w-[20.55%];
+    @apply m-3 md:m-[14px] lg:m-[15px] xl:m-5;
+    @apply flex-grow;
+    /* @apply bg-gradient-to-r from-[rgba(0,0,0,0.32)] from-20% via-[rgba(0,0,0,0)] via-70% to-[rgba(0,0,0,0)] to-100%; */
+  }
+  /* Any box problem like this. */
+  /* content holder
+flex flex-wrap: ;
+*/
+  /* Content box gangan
+height
+@apply w-full md:w-[46.4%] lg:w-[20.55%];
+    @apply m-3 md:m-[14px] lg:m-[15px] xl:m-5; << If margin
+    flex-grow: 1;
+
+*/
+
+  .genMarc {
+    /* @apply my-6 md:my-14 lg:my-20 xl:my-28; */
+    @apply mx-4 md:mx-10 lg:mx-[60px] xl:mx-[84px];
+  }
+  .sb-content div span {
+    @apply p-7;
+    @apply text-2xl md:text-[33px] lg:text-3xl;
+    @apply leading-[1];
+  }
+
+  .third-box {
+    @apply flex flex-col md:flex-row md:justify-between;
+    @apply bg-black text-white;
+  }
+
+  .genPadTB {
+    @apply py-4 md:py-5 lg:py-6 xl:py-10;
+    @apply px-6 md:px-14 lg:px-20 xl:px-28;
+  }
+  .TB-first, .TB-second {
+    @apply flex flex-col;
+    @apply justify-center md:justify-between;
+  }
+  .TB-first {
+    @apply text-center md:text-left;
+  }
+  .nav-nameTB{
+    @apply text-3xl md:text-2xl lg:text-3xl;
+    @apply my-4 md:my-0;
+  }
+  .TB-second {
+    @apply text-center md:text-right;
+    @apply my-3 md:my-0;
+  }
+  .TB-icons{
+    @apply my-3 md:my-2;
+  }
+  .TB-icons .fab{
+    @apply size-3 lg:size-4;
+    @apply mx-2 md:mx-1;
+  }
+  .copyright{
+    @apply my-2 md:my-1;
+  }
+  .navbarTB {
+    @apply flex flex-col md:flex-row;
+    @apply my-2 md:my-1;
+  }
+  .navbarTB a {
+    @apply mr-2 lg:mr-4;
+    @apply text-xl md:text-[16px] lg:text-xl;
+    @apply my-3 md:my-0;
+    @apply mx-0;
+  }
+  .navbarTB a:not(:nth-child(1)) {
+    @apply md:mx-2 lg:mx-4;
+  }
+  /* General padding X*/
+  .genPad {
+    @apply py-6 md:py-14 lg:py-20 xl:py-28;
+    @apply px-6 md:px-14 lg:px-20 xl:px-28;
+  }
+  .genMar {
+    /* @apply my-6 md:my-14 lg:my-20 xl:my-28; */
+    @apply mx-6 md:mx-14 lg:mx-20 xl:mx-28;
+  }
+}
