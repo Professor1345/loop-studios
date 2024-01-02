@@ -71,6 +71,7 @@
     @apply p-6 md:p-6 lg:p-8 lg:m-0;
     @apply my-24 md:my-20 lg:my-20 xl:my-24 2xl:my-32;
     @apply mt-40 md:mt-36 lg:mt-28;
+    /* @apply  */
   }
   /* First Box Ends Here */
 
