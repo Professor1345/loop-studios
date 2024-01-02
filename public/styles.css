@@ -523,8 +523,7 @@ body {
 
 @media (min-width: 1024px) {
   .first-box {
-    min-height: -moz-max-content;
-    min-height: max-content;
+    min-height: 0px;
   }
 }
 
@@ -735,7 +734,22 @@ body {
 }
 
 .firstbox-word {
-  /* @apply mt-40 md:mt-36 lg:mt-28; */
+  margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  .firstbox-word {
+    margin-top: 9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .firstbox-word {
+    margin-top: 7rem;
+  }
+}
+
+.firstbox-word {
   /* @apply my-auto; */
 }
 
@@ -1602,12 +1616,6 @@ height
 .text-blue-800 {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
-}
-
-@media not all and (min-width: 768px) {
-  .max-md\:min-h-\[100vh\] {
-    min-height: 100vh;
-  }
 }
 
 @media (min-width: 768px) {
