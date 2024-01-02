@@ -875,7 +875,7 @@ body {
 }
 
 .see-allM {
-  display: block !important;
+  display: flex !important;
 }
 
 @media (min-width: 768px) {
@@ -887,7 +887,6 @@ body {
 .see-allM {
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
-  display: flex !important;
   justify-content: center !important;
 }
 

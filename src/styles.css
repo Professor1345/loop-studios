@@ -99,7 +99,7 @@
     @apply mb-2 md:mb-6 lg:mb-12 xl:mb-16;
   }
 
-  .see-all {
+  .see-all{
     @apply self-center hidden md:flex;
   }
   .see-all a {
@@ -109,8 +109,8 @@
   }
 
   .see-allM{
-    @apply block md:hidden !important;
-    @apply flex justify-center my-6 !important;
+    @apply flex md:hidden !important;
+    @apply justify-center my-6 !important;
   }
   .see-allM a {
     @apply border-[1px] text-xl border-solid;
