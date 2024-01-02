@@ -523,7 +523,7 @@ body {
 
 @media (min-width: 768px) {
   .first-box {
-    min-height: 0px;
+    min-height: 0vh;
   }
 }
 
@@ -1619,6 +1619,10 @@ height
 }
 
 @media (min-width: 768px) {
+  .md\:min-h-0 {
+    min-height: 0px;
+  }
+
   .md\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
