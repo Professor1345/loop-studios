@@ -52,21 +52,27 @@
         </div>
       </div>
       <div class="second-box">
-        <div class="second-box-one">
-          <div class="second-image flex-1">
+        <div class="second-box-one genPad">
+          <!-- <div class="second-image">
             <picture>
               <source
                 media="(min-width: 1024px)"
                 srcset="./images/desktop/image-interactive.jpg"
               />
-              <source src="./images/mobile/image-interactive.jpg" />
+              <source src="./images/mob ile/image-interactive.jpg" />
               <img
                 src="./images/mobile/image-interactive.jpg"
                 alt="Image Interactive"
-                style="width: auto"
+              
               />
             </picture>
-          </div>
+          </div> -->
+
+          <div class="second-image">
+            <img class="hidden lg:flex" src="./images/desktop/image-interactive.jpg" alt="image-interactive" srcset="">
+            <img class="block lg:hidden" src="./images/mobile/image-interactive.jpg" alt="image-interactive" srcset="">
+        </div>
+
           <div class="side-words flex-1">
             <div class="sw-header uppercase">The leader in interactive VR</div>
             <div class="sw-body">
@@ -77,6 +83,7 @@
             </div>
           </div>
         </div>
+
         <div class="second-box-two uppercase py-6 md:py-14 lg:py-20 xl:py-28">
           <div class="sb-header genMar">
             <div class="text-3xl md:text-5xl lg:text-5xl">Our creations</div>
