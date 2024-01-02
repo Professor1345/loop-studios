@@ -66,9 +66,9 @@
 
   .firstbox-word {
     @apply border-white border-2 border-solid;
-    @apply text-3xl sm:text-4xl md:text-6xl lg:text-7xl inline-block uppercase;
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl inline-block uppercase;
     @apply w-[100%] md:w-[70%] lg:w-2/3;
-    @apply p-8 md:p-10 lg:m-0;
+    @apply p-6 md:p-6 lg:p-8 lg:m-0;
     @apply my-24 md:my-20 lg:my-20 xl:my-24 2xl:my-32;
     @apply mt-40 md:mt-36 lg:mt-28;
   }

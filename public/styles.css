@@ -642,15 +642,15 @@ body {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   display: inline-block;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   text-transform: uppercase;
 }
 
 @media (min-width: 640px) {
   .firstbox-word {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -685,18 +685,19 @@ body {
 }
 
 .firstbox-word {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .firstbox-word {
-    padding: 2.5rem;
+    padding: 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .firstbox-word {
     margin: 0px;
+    padding: 2rem;
   }
 }
 
