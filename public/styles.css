@@ -521,7 +521,7 @@ body {
   min-height: 90vh;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .first-box {
     min-height: 0px;
   }
