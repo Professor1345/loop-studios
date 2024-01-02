@@ -921,18 +921,18 @@ body {
   background-repeat: no-repeat;
   display: flex;
   align-items: flex-end;
-  height: 16rem;
+  height: 11rem;
 }
 
 @media (min-width: 640px) {
   .sb-content div {
-    height: 18rem;
+    height: 13rem;
   }
 }
 
 @media (min-width: 768px) {
   .sb-content div {
-    height: 22rem;
+    height: 18rem;
   }
 }
 
@@ -1034,13 +1034,20 @@ height
 
 .sb-content div span {
   padding: 1.75rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 640px) {
+  .sb-content div span {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
   .sb-content div span {
-    font-size: 33px;
+    font-size: 35px;
   }
 }
 
@@ -1126,14 +1133,16 @@ height
   }
 }
 
-.TB-first, .TB-second {
+.TB-first,
+  .TB-second {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 @media (min-width: 768px) {
-  .TB-first, .TB-second {
+  .TB-first,
+  .TB-second {
     justify-content: space-between;
   }
 }
