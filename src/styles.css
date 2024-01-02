@@ -79,7 +79,7 @@
   .second-box-one {
     @apply flex flex-col md:flex-row;
     /* @apply py-12 md:py-14 lg:py-20 xl:py-28 */
-    @apply my-8 sm:my-12 md:my-14 lg:my-20 xl:my-28;
+    @apply my-8 sm:my-12 md:my-0 lg:my-0 xl:my-0;
 
   }
   .second-image {
