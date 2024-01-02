@@ -1524,6 +1524,10 @@ height
   display: grid;
 }
 
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
