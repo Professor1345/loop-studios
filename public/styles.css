@@ -735,23 +735,8 @@ body {
 }
 
 .firstbox-word {
-  margin-top: 10rem;
-}
-
-@media (min-width: 768px) {
-  .firstbox-word {
-    margin-top: 9rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .firstbox-word {
-    margin-top: 7rem;
-  }
-}
-
-.firstbox-word {
-  /* @apply  */
+  /* @apply mt-40 md:mt-36 lg:mt-28; */
+  /* @apply my-auto; */
 }
 
 /* First Box Ends Here */
@@ -1551,13 +1536,8 @@ height
   resize: both;
 }
 
-.self-center {
-  align-self: center;
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+.items-center {
+  align-items: center;
 }
 
 .bg-\[linear-gradient\(to_right\2c rgba\(0\2c 0\2c 0\2c 0\.32\)\2c rgba\(0\2c 0\2c 0\2c 0\)\)\2c url\(\'\.\/images\/mobile\/image-curiosity\.jpg\'\)\] {
@@ -1618,6 +1598,12 @@ height
 .text-blue-800 {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+@media not all and (min-width: 768px) {
+  .max-md\:min-h-\[100vh\] {
+    min-height: 100vh;
+  }
 }
 
 @media (min-width: 768px) {

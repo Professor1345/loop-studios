@@ -17,6 +17,7 @@
     @apply p-7 md:p-8 lg:p-9 xl:p-11;
     @apply px-6 md:px-14 lg:px-20 xl:px-28;
     @apply min-h-[90vh] lg:min-h-max;
+
   }
   .nav {
     @apply flex justify-between;
@@ -70,8 +71,8 @@
     @apply w-[100%] md:w-[70%] lg:w-2/3;
     @apply p-6 md:p-6 lg:p-8 lg:m-0;
     @apply my-24 md:my-20 lg:my-20 xl:my-24 2xl:my-32;
-    @apply mt-40 md:mt-36 lg:mt-28;
-    /* @apply  */
+    /* @apply mt-40 md:mt-36 lg:mt-28; */
+    /* @apply my-auto; */
   }
   /* First Box Ends Here */
 
