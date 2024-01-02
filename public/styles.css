@@ -517,6 +517,17 @@ body {
   }
 }
 
+.first-box {
+  min-height: 80vh;
+}
+
+@media (min-width: 1024px) {
+  .first-box {
+    min-height: -moz-max-content;
+    min-height: max-content;
+  }
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -712,6 +723,22 @@ body {
   .firstbox-word {
     margin-top: 8rem;
     margin-bottom: 8rem;
+  }
+}
+
+.firstbox-word {
+  margin-top: 9rem;
+}
+
+@media (min-width: 768px) {
+  .firstbox-word {
+    margin-top: 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .firstbox-word {
+    margin-top: 7rem;
   }
 }
 
@@ -1034,8 +1061,8 @@ height
 
 .sb-content div span {
   padding: 1.75rem;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 @media (min-width: 640px) {
@@ -1211,8 +1238,8 @@ height
 }
 
 .TB-icons {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -1223,14 +1250,15 @@ height
 }
 
 .TB-icons .fab {
-  width: 0.75rem;
-  height: 0.75rem;
+  /* @apply size-7 lg:size-4; */
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .TB-icons .fab {
-    width: 1rem;
-    height: 1rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -1292,8 +1320,15 @@ height
 }
 
 .navbarTB a {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .navbarTB a {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1322,8 +1357,19 @@ height
 }
 
 .navbarTB a {
-  margin-left: 0px;
   margin-right: 0px;
+}
+
+@media (min-width: 768px) {
+  .navbarTB a {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbarTB a {
+    margin-right: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1534,6 +1580,10 @@ height
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .uppercase {
