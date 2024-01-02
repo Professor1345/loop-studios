@@ -1721,6 +1721,10 @@ height
   min-height: 100vh;
 }
 
+.min-h-\[80vh\] {
+  min-height: 80vh;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
