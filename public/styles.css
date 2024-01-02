@@ -518,7 +518,7 @@ body {
 }
 
 .first-box {
-  min-height: 90vh;
+  min-height: 85vh;
 }
 
 @media (min-width: 768px) {
