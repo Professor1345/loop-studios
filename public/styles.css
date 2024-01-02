@@ -518,7 +518,7 @@ body {
 }
 
 .first-box {
-  min-height: 85vh;
+  min-height: 90vh;
 }
 
 @media (min-width: 768px) {
@@ -1717,8 +1717,8 @@ height
   display: none;
 }
 
-.min-h-\[90vh\] {
-  min-height: 90vh;
+.h-\[80vh\] {
+  height: 80vh;
 }
 
 .cursor-pointer {
@@ -1794,8 +1794,8 @@ height
 }
 
 @media (min-width: 768px) {
-  .md\:min-h-0 {
-    min-height: 0px;
+  .md\:h-0 {
+    height: 0px;
   }
 
   .md\:py-14 {
