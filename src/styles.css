@@ -16,7 +16,7 @@
     @apply text-gray-100;
     @apply p-7 md:p-8 lg:p-9 xl:p-11;
     @apply px-6 md:px-14 lg:px-20 xl:px-28;
-    @apply min-h-[100vh] md:min-h-[0vh];
+    @apply min-h-[90vh] md:min-h-[0vh];
 
   }
   .nav {
