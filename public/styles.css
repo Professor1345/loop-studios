@@ -1674,71 +1674,51 @@ height
   }
 }
 
-.navbarTB a {
-  margin-right: 0.5rem;
-}
+/* .navbarTB a {
+    @apply mr-2 lg:mr-4;
+    
+    @apply my-3 md:my-0;
+    @apply mr-0 md:mr-2 lg:mr-4;
+  
+  } */
 
-@media (min-width: 1024px) {
-  .navbarTB a {
-    margin-right: 1rem;
-  }
-}
-
-.navbarTB a {
+.navbarTB a:not(:nth-child(1)) {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
 @media (min-width: 640px) {
-  .navbarTB a {
+  .navbarTB a:not(:nth-child(1)) {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width: 768px) {
-  .navbarTB a {
+  .navbarTB a:not(:nth-child(1)) {
     font-size: 16px;
   }
 }
 
 @media (min-width: 1024px) {
-  .navbarTB a {
+  .navbarTB a:not(:nth-child(1)) {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
-.navbarTB a {
+.navbarTB a:not(:nth-child(1)) {
+  /* @apply border border-blue-700 border-solid; */
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-}
-
-@media (min-width: 768px) {
-  .navbarTB a {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-}
-
-.navbarTB a {
+  margin-left: 0px;
   margin-right: 0px;
 }
 
 @media (min-width: 768px) {
-  .navbarTB a {
-    margin-right: 0.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .navbarTB a {
-    margin-right: 1rem;
-  }
-}
-
-@media (min-width: 768px) {
   .navbarTB a:not(:nth-child(1)) {
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
@@ -1749,6 +1729,67 @@ height
     margin-left: 1rem;
     margin-right: 1rem;
   }
+}
+
+.navbarTB a:not(:nth-child(1)) {
+  padding: 0.25rem;
+  align-self: center;
+}
+
+.navbarTB a:nth-child(1) {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media (min-width: 768px) {
+  .navbarTB a:nth-child(1) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbarTB a:nth-child(1) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-left: 0px;
+  }
+}
+
+.navbarTB a:nth-child(1) {
+  padding: 0.25rem;
+  align-self: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .navbarTB a:nth-child(1) {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbarTB a:nth-child(1) {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbarTB a:nth-child(1) {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+.navbarTB a:nth-child(1) {
+  /* @apply border border-blue-700 border-solid; */
 }
 
 /* General padding X*/

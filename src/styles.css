@@ -188,7 +188,7 @@
     @apply flex-grow;
 
     /* Hover */
-    @apply text-gray-50 hover:text-gray-950 ;
+    @apply text-gray-50 hover:text-gray-950;
     /* transition ease-linear duration-[.1s]; */
     /* @apply bg-gradient-to-r from-[rgba(0,0,0,0.32)] from-20% via-[rgba(0,0,0,0)] via-70% to-[rgba(0,0,0,0)] to-100%; */
   }
@@ -255,22 +255,22 @@ height
 
   /* Below Hover Settings */
   /* .hovStyle a{ */
-    /* @apply before:visible before:block before:content-[''];  */
+  /* @apply before:visible before:block before:content-[''];  */
 
-    /* hover:before:visible; */
+  /* hover:before:visible; */
 
-    /* @apply z-10 before:-z-[1]; */
-    /* @apply before:w-8 before:h-8 before:bg-white before:relative before:top-0; */
+  /* @apply z-10 before:-z-[1]; */
+  /* @apply before:w-8 before:h-8 before:bg-white before:relative before:top-0; */
 
-    /* @apply before:invisible hover:before:visible;
+  /* @apply before:invisible hover:before:visible;
     @apply z-10 before:content-[""] before:block relative before:absolute before:bg-white;
     @apply before:-z-[1]; */
-    /* before:-left-2 before:top-[90%] before:right-[10%]; */
-    /* @apply before:-bottom-[2px] before:left-[24%] p-1;
+  /* before:-left-2 before:top-[90%] before:right-[10%]; */
+  /* @apply before:-bottom-[2px] before:left-[24%] p-1;
     @apply before:h-[2px] before:w-[50%]; */
 
-    /* @apply border-b-2 border-solid border-black p-1; */
-    /* @apply border-[linear-gradient(to_right,_rgba(0,0,0,0),_rgba(0,0,0,0),yellow,_rgba(0,0,0,0),_rgba(0,0,0,0))] !important; */
+  /* @apply border-b-2 border-solid border-black p-1; */
+  /* @apply border-[linear-gradient(to_right,_rgba(0,0,0,0),_rgba(0,0,0,0),yellow,_rgba(0,0,0,0),_rgba(0,0,0,0))] !important; */
   /* } */
 
   .copyright {
@@ -280,15 +280,29 @@ height
     @apply flex flex-col md:flex-row;
     @apply my-2 md:my-1;
   }
-  .navbarTB a {
+  /* .navbarTB a {
     @apply mr-2 lg:mr-4;
-    @apply text-lg sm:text-lg md:text-[16px] lg:text-xl;
+    
     @apply my-3 md:my-0;
     @apply mr-0 md:mr-2 lg:mr-4;
-  }
+  
+  } */
   .navbarTB a:not(:nth-child(1)) {
-    @apply md:mx-2 lg:mx-4;
+    @apply text-lg sm:text-lg md:text-[16px] lg:text-xl;
+    /* @apply border border-blue-700 border-solid; */
+    @apply my-3 mx-0 md:my-0 md:mx-2 lg:mx-4;
+    @apply p-1;
+    @apply self-center;
   }
+
+  .navbarTB a:nth-child(1) {
+    @apply my-3 mx-0 md:my-0 md:mx-2 md:ml-0 lg:mx-4 lg:ml-0;
+    @apply p-1;
+    @apply self-center;
+    @apply text-lg sm:text-lg md:text-[16px] lg:text-xl;
+    /* @apply border border-blue-700 border-solid; */
+  }
+
   /* General padding X*/
   .genPad {
     @apply py-6 md:py-14 lg:py-20 xl:py-28;
