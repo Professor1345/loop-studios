@@ -212,7 +212,7 @@ height
     @apply p-7;
     @apply text-2xl sm:text-4xl md:text-[35px] lg:text-3xl;
     @apply leading-[1];
-    @apply bg-[rgba(0,0,0,0)] hover:bg-[rgba(255,255,255,0.75)] transition ease-in-out duration-[.3s];
+    @apply bg-[rgba(0,0,0,0)] hover:bg-[rgba(255,255,255,0.6)] transition ease-in-out duration-[.3s];
     @apply min-h-full min-w-full;
     @apply flex items-end;
   }
@@ -280,13 +280,7 @@ height
     @apply flex flex-col md:flex-row;
     @apply my-2 md:my-1;
   }
-  /* .navbarTB a {
-    @apply mr-2 lg:mr-4;
-    
-    @apply my-3 md:my-0;
-    @apply mr-0 md:mr-2 lg:mr-4;
   
-  } */
   .navbarTB a:not(:nth-child(1)) {
     @apply text-lg sm:text-lg md:text-[16px] lg:text-xl;
     /* @apply border border-blue-700 border-solid; */

@@ -1401,7 +1401,7 @@ height
 }
 
 .sb-content div span:hover {
-  background-color: rgba(255,255,255,0.75);
+  background-color: rgba(255,255,255,0.6);
 }
 
 .sb-content div span {
@@ -1673,14 +1673,6 @@ height
     margin-bottom: 0.25rem;
   }
 }
-
-/* .navbarTB a {
-    @apply mr-2 lg:mr-4;
-    
-    @apply my-3 md:my-0;
-    @apply mr-0 md:mr-2 lg:mr-4;
-  
-  } */
 
 .navbarTB a:not(:nth-child(1)) {
   font-size: 1.125rem;
