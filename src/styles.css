@@ -60,7 +60,7 @@
 
   /* Navbar for Mobile */
   .navMobile {
-    @apply hidden md:hidden !important;
+    @apply hidden md:hidden;
     @apply w-full h-screen z-20 fixed !important;
     @apply bg-black text-white;
     @apply top-0 left-0;

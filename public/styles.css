@@ -642,12 +642,12 @@ body {
 /* Navbar for Mobile */
 
 .navMobile {
-  display: none !important;
+  display: none;
 }
 
 @media (min-width: 768px) {
   .navMobile {
-    display: none !important;
+    display: none;
   }
 }
 
