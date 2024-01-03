@@ -1880,6 +1880,10 @@ height
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .block {
   display: block;
 }
@@ -1967,16 +1971,16 @@ height
   line-height: 1.75rem;
 }
 
+.font-\[400\] {
+  font-weight: 400;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-\[400\] {
-  font-weight: 400;
 }
 
 .uppercase {
