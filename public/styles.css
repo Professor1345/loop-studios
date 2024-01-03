@@ -648,8 +648,8 @@ body {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   display: inline-block;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   text-transform: uppercase;
 }
 
@@ -691,7 +691,13 @@ body {
 }
 
 .firstbox-word {
-  padding: 1.5rem;
+  padding: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .firstbox-word {
+    padding: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -758,6 +764,7 @@ body {
 
 .firstbox-word {
   /* @apply my-auto; */
+  padding-bottom: 0.75rem;
 }
 
 /* First Box Ends Here */
@@ -907,7 +914,7 @@ body {
 .side-words {
   z-index: 10;
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
   /* lg:mb-20 */
   position: relative;
 }
@@ -941,6 +948,18 @@ body {
 }
 
 .side-words {
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .side-words {
+    padding-top: 2rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+.side-words {
   text-align: center;
 }
 
@@ -954,7 +973,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   /* @apply lg:self-end lg:justify-end !important; */
   /* @apply lg:ml-10; */
   /* @apply lg:mr-20 lg:ml-64 lg:h-6; */
@@ -962,8 +981,9 @@ body {
 }
 
 .sw-header {
-  font-size: 28px;
+  font-size: 1.5rem;
   line-height: 2rem;
+  font-weight: 700;
 }
 
 @media (min-width: 640px) {
@@ -974,8 +994,7 @@ body {
 
 @media (min-width: 768px) {
   .sw-header {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+    font-size: 30px;
   }
 }
 
@@ -995,23 +1014,32 @@ body {
 
 @media (min-width: 1536px) {
   .sw-header {
-    font-size: 4.5rem;
+    font-size: 3.75rem;
     line-height: 1;
   }
 }
 
 .sw-header {
-  padding: 0.5rem;
+  padding: 0.25rem;
 }
 
 @media (min-width: 1280px) {
   .sw-header {
     padding: 0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .sw-header {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 
 .sw-body {
-  padding: 0.5rem;
+  padding: 0.25rem;
 }
 
 @media (min-width: 1280px) {
@@ -1080,11 +1108,24 @@ body {
   border-style: solid;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  padding: 0.25rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.5rem;
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  /* Hover */
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: .3s;
+}
+
+.see-all a:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .see-allM {
@@ -1101,6 +1142,7 @@ body {
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
   justify-content: center !important;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .see-allM a {
@@ -1717,8 +1759,8 @@ height
   display: none;
 }
 
-.h-\[80vh\] {
-  height: 80vh;
+.min-h-\[80vh\] {
+  min-height: 80vh;
 }
 
 .cursor-pointer {
@@ -1770,6 +1812,14 @@ height
   padding-bottom: 1.5rem;
 }
 
+.font-\[\'Alata\'\2c _sans-serif\] {
+  font-family: 'Alata', sans-serif;
+}
+
+.font-\[\'Josefin_Sans\'\2c _sans-serif\] {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1793,9 +1843,11 @@ height
   color: rgb(30 64 175 / var(--tw-text-opacity));
 }
 
+/* @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap'); */
+
 @media (min-width: 768px) {
-  .md\:h-0 {
-    height: 0px;
+  .md\:min-h-0 {
+    min-height: 0px;
   }
 
   .md\:py-14 {
