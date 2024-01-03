@@ -533,6 +533,8 @@ body {
 }
 
 .nav-name {
+  margin-top: auto;
+  margin-bottom: auto;
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
@@ -583,6 +585,58 @@ body {
   margin-bottom: auto;
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+/* Hover for Navs */
+
+.hovStyle {
+  /* @apply before:visible before:block before:content-[''];  */
+  /* hover:before:visible; */
+  /* @apply z-10 before:-z-[1]; */
+  /* @apply before:w-8 before:h-8 before:bg-white before:relative before:top-0; */
+}
+
+.hovStyle::before {
+  content: var(--tw-content);
+  visibility: hidden;
+}
+
+.hovStyle:hover::before {
+  content: var(--tw-content);
+  visibility: visible;
+}
+
+.hovStyle {
+  position: relative;
+  z-index: 10;
+}
+
+.hovStyle::before {
+  position: absolute;
+  display: block;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-content: "";
+  content: var(--tw-content);
+  z-index: -1;
+}
+
+.hovStyle {
+  /* before:-left-2 before:top-[90%] before:right-[10%]; */
+  padding: 0.25rem;
+}
+
+.hovStyle::before {
+  bottom: -2px;
+  left: 24%;
+  height: 2px;
+  content: var(--tw-content);
+  width: 50%;
+}
+
+.hovStyle {
+  /* @apply border-b-2 border-solid border-black p-1; */
+  /* @apply border-[linear-gradient(to_right,_rgba(0,0,0,0),_rgba(0,0,0,0),yellow,_rgba(0,0,0,0),_rgba(0,0,0,0))] !important; */
 }
 
 /* Navbar for Mobile */
@@ -1155,6 +1209,18 @@ body {
   padding-right: 4rem;
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  /* Hover */
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: .3s;
+}
+
+.see-allM a:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .second-box-two {
@@ -1165,8 +1231,6 @@ body {
 .sb-content {
   display: flex;
   flex-wrap: wrap;
-  --tw-text-opacity: 1;
-  color: rgb(249 250 251 / var(--tw-text-opacity));
 }
 
 .sb-content div {
@@ -1243,6 +1307,18 @@ body {
 
 .sb-content div {
   flex-grow: 1;
+  /* Hover */
+  --tw-text-opacity: 1;
+  color: rgb(249 250 251 / var(--tw-text-opacity));
+}
+
+.sb-content div:hover {
+  --tw-text-opacity: 1;
+  color: rgb(3 7 18 / var(--tw-text-opacity));
+}
+
+.sb-content div {
+  /* transition ease-linear duration-[.1s]; */
   /* @apply bg-gradient-to-r from-[rgba(0,0,0,0.32)] from-20% via-[rgba(0,0,0,0)] via-70% to-[rgba(0,0,0,0)] to-100%; */
 }
 
@@ -1315,6 +1391,24 @@ height
 
 .sb-content div span {
   line-height: 1;
+  background-color: rgba(0,0,0,0);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: 150ms;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sb-content div span:hover {
+  background-color: rgba(255,255,255,0.75);
+}
+
+.sb-content div span {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .third-box {
@@ -1501,6 +1595,49 @@ height
     margin-right: 0.25rem;
   }
 }
+
+.TB-icons .fab {
+  border-color: transparent;
+}
+
+.TB-icons .fab:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.TB-icons .fab {
+  border-bottom-width: 2px;
+  border-style: solid;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+/* Below Hover Settings */
+
+/* .hovStyle a{ */
+
+/* @apply before:visible before:block before:content-[''];  */
+
+/* hover:before:visible; */
+
+/* @apply z-10 before:-z-[1]; */
+
+/* @apply before:w-8 before:h-8 before:bg-white before:relative before:top-0; */
+
+/* @apply before:invisible hover:before:visible;
+    @apply z-10 before:content-[""] before:block relative before:absolute before:bg-white;
+    @apply before:-z-[1]; */
+
+/* before:-left-2 before:top-[90%] before:right-[10%]; */
+
+/* @apply before:-bottom-[2px] before:left-[24%] p-1;
+    @apply before:h-[2px] before:w-[50%]; */
+
+/* @apply border-b-2 border-solid border-black p-1; */
+
+/* @apply border-[linear-gradient(to_right,_rgba(0,0,0,0),_rgba(0,0,0,0),yellow,_rgba(0,0,0,0),_rgba(0,0,0,0))] !important; */
+
+/* } */
 
 .copyright {
   margin-top: 0.5rem;
@@ -1832,6 +1969,10 @@ height
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {

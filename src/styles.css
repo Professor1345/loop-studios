@@ -24,7 +24,7 @@
     @apply flex justify-between;
   }
   .nav-name {
-    @apply text-3xl font-bold;
+    @apply text-3xl font-bold my-auto;
   }
   .navbar {
     @apply hidden md:flex !important;
@@ -37,6 +37,25 @@
   .fa-bars {
     @apply sm:flex md:hidden !important;
     @apply text-3xl my-auto;
+  }
+
+  /* Hover for Navs */
+  .hovStyle {
+    /* @apply before:visible before:block before:content-[''];  */
+
+    /* hover:before:visible; */
+
+    /* @apply z-10 before:-z-[1]; */
+    /* @apply before:w-8 before:h-8 before:bg-white before:relative before:top-0; */
+
+    @apply before:invisible hover:before:visible;
+    @apply z-10 before:content-[""] before:block relative before:absolute before:bg-white;
+    @apply before:-z-[1];
+    /* before:-left-2 before:top-[90%] before:right-[10%]; */
+    @apply before:-bottom-[2px] before:left-[24%] p-1;
+    @apply before:h-[2px] before:w-[50%];
+    /* @apply border-b-2 border-solid border-black p-1; */
+    /* @apply border-[linear-gradient(to_right,_rgba(0,0,0,0),_rgba(0,0,0,0),yellow,_rgba(0,0,0,0),_rgba(0,0,0,0))] !important; */
   }
 
   /* Navbar for Mobile */
@@ -79,7 +98,6 @@
   /* First Box Ends Here */
 
   .second-box-one {
-    
     @apply flex flex-col md:flex-row;
     /* @apply py-12 md:py-14 lg:py-20 xl:py-28 */
     @apply my-8 sm:my-12 md:my-0 lg:my-0 xl:my-0;
@@ -150,13 +168,15 @@
     @apply border-[1px] text-xl border-solid;
     @apply p-3 px-16;
     @apply border-black;
+    /* Hover */
+    @apply hover:bg-black hover:text-white transition-all duration-[.3s];
   }
   .second-box-two {
     @apply bg-slate-50;
   }
 
   .sb-content {
-    @apply flex flex-wrap text-gray-50;
+    @apply flex flex-wrap;
   }
   .sb-content div {
     /* @apply bg-[url('./images/mobile/image-deep-earth.jpg')] lg:bg-[url('./images/desktop/image-deep-earth.jpg')]; */
@@ -166,6 +186,10 @@
     @apply w-full md:w-[46.4%] lg:w-[20.55%];
     @apply m-3 md:m-[14px] lg:m-[15px] xl:m-5;
     @apply flex-grow;
+
+    /* Hover */
+    @apply text-gray-50 hover:text-gray-950 ;
+    /* transition ease-linear duration-[.1s]; */
     /* @apply bg-gradient-to-r from-[rgba(0,0,0,0.32)] from-20% via-[rgba(0,0,0,0)] via-70% to-[rgba(0,0,0,0)] to-100%; */
   }
   /* Any box problem like this. */
@@ -188,6 +212,9 @@ height
     @apply p-7;
     @apply text-2xl sm:text-4xl md:text-[35px] lg:text-3xl;
     @apply leading-[1];
+    @apply bg-[rgba(0,0,0,0)] hover:bg-[rgba(255,255,255,0.75)] transition ease-in-out duration-[.3s];
+    @apply min-h-full min-w-full;
+    @apply flex items-end;
   }
 
   .third-box {
@@ -222,7 +249,30 @@ height
     /* @apply size-7 lg:size-4; */
     @apply text-2xl md:text-3xl;
     @apply mx-2 md:mx-1;
+    @apply border-transparent hover:border-white;
+    @apply border-b-2 border-solid  py-1;
   }
+
+  /* Below Hover Settings */
+  /* .hovStyle a{ */
+    /* @apply before:visible before:block before:content-[''];  */
+
+    /* hover:before:visible; */
+
+    /* @apply z-10 before:-z-[1]; */
+    /* @apply before:w-8 before:h-8 before:bg-white before:relative before:top-0; */
+
+    /* @apply before:invisible hover:before:visible;
+    @apply z-10 before:content-[""] before:block relative before:absolute before:bg-white;
+    @apply before:-z-[1]; */
+    /* before:-left-2 before:top-[90%] before:right-[10%]; */
+    /* @apply before:-bottom-[2px] before:left-[24%] p-1;
+    @apply before:h-[2px] before:w-[50%]; */
+
+    /* @apply border-b-2 border-solid border-black p-1; */
+    /* @apply border-[linear-gradient(to_right,_rgba(0,0,0,0),_rgba(0,0,0,0),yellow,_rgba(0,0,0,0),_rgba(0,0,0,0))] !important; */
+  /* } */
+
   .copyright {
     @apply my-2 md:my-1;
   }
