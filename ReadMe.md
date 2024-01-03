@@ -1,4 +1,4 @@
-### Loop Studios Website
+#### Loop Studios Website
 
 Welcome to the Loop Studios website project! This repository contains the code for a simple and immersive website developed using HTML, Tailwind CSS, and JavaScript.
 
