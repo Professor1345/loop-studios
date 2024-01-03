@@ -1,12 +1,12 @@
-#### Loop Studios Website
+## Loop Studios Website
 
 Welcome to the Loop Studios website project! This repository contains the code for a simple and immersive website developed using HTML, Tailwind CSS, and JavaScript.
 
-## Website Link
+### Website Link
 
 https://looop-studios.netlify.app/
 
-## Table of contents
+### Table of contents
 
 - [Overview](#overview)
 - [The Challenges](#the-challenges)
@@ -14,11 +14,11 @@ https://looop-studios.netlify.app/
 - [Author](#author)
 - [Getting Started](#getting-started)
 
-### Overview
-
-## HTML
-
 ## Overview
+
+### HTML
+
+### Overview
 
 The HTML code (index.html) is the main structure of the website, defining the layout, content, and structure. Here's a brief overview of the main sections:
 
@@ -26,9 +26,9 @@ The HTML code (index.html) is the main structure of the website, defining the la
 - Second Box: Showcases an interactive VR image along with a description of Loop Studios.
 - Third Box: Presents various creations by Loop Studios.
 
-## Tailwind CSS
+### Tailwind CSS
 
-## Overview
+### Overview
 
 The Tailwind CSS code (styles.css) complements the HTML by providing styling and responsiveness. Here's a summary of key sections in the CSS:
 
@@ -37,16 +37,16 @@ The Tailwind CSS code (styles.css) complements the HTML by providing styling and
 - Third Box Styling: Styles the creation cards, including background gradients and hover effects.
   Navigation Styling: Defines styles for the desktop and mobile navigation bars.
 
-## JavaScript
+### JavaScript
 
-## Overview
+### Overview
 
 The JavaScript code (code.js) enhances the website's interactivity, primarily focusing on mobile navigation. Here's what the JavaScript does:
 
 - Mobile Navigation: Implements functions (openButton and closeButton) to toggle the display of the mobile navigation when the respective buttons are clicked.
 - Responsive Navigation: Includes commented-out code attempting to handle navigation visibility based on screen width, but currently disabled.
 
-### The Challenges
+## The Challenges
 
 I face alot of challenges while coding this project.
 From the starting point;
@@ -71,7 +71,7 @@ I had some miscalculation issue here, flex-box cal, you get? 😉
 
 Likewise add minor issue with hover here too. Got to know one can't use ::before with font-awesome (according to what I experience).
 
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
@@ -80,12 +80,12 @@ Likewise add minor issue with hover here too. Got to know one can't use ::before
 - TailwindCSS
 - JavaScript
 
-### Author
+## Author
 
 - Website - [Hammed Bello](http://hammedbello.netlify.app/)
 - Twitter - [@JavaNotScript](https://twitter.com/JavaNotScript)
 
-### Getting Started
+## Getting Started
 
 Clone this repository to your local machine.
 Open 'index.html' in your preferred web browser to view the website.
