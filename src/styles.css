@@ -27,7 +27,7 @@
     @apply text-3xl font-bold;
   }
   .navbar {
-    @apply hidden md:flex;
+    @apply hidden md:flex !important;
   }
   .navbar a {
     @apply md:mx-4 my-auto;
@@ -41,7 +41,7 @@
 
   /* Navbar for Mobile */
   .navMobile {
-    @apply hidden md:hidden;
+    @apply hidden md:hidden !important;
     @apply w-full h-screen z-20 fixed !important;
     @apply bg-black text-white;
     @apply top-0 left-0;
