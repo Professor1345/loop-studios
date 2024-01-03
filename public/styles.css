@@ -1975,6 +1975,10 @@ height
   font-weight: 600;
 }
 
+.font-\[400\] {
+  font-weight: 400;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
